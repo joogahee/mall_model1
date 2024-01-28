@@ -15,12 +15,10 @@ public class ReviewDao {
 	public ArrayList<HashMap<String, Object>> selectReview(int beginRow, int rowPerPage, String searchGoodsTitle,String searchWord) throws Exception{
 		
 		// db핸들링(model)
-		Class.forName("org.mariadb.jdbc.Driver");	// DB Driver클래스 코드
-		System.out.println("드라이브 로딩 성공");		// DB 드라이브 로딩 확인 디버깅
-		// DB연결에 필요한 정보를 변수에 담아줌 (가독성)
-		String url = "jdbc:mariadb://localhost:3306/mall";		
+		Class.forName("org.mariadb.jdbc.Driver");
+		String url = "jdbc:mariadb://52.79.156.218:3306/mall";
 		String dbuser = "root";
-		String dbpw = "java1234";
+		String dbpw = "java12345";
 		//DB연결을 위한 Connection객체 생성, 연결
 		Connection conn = DriverManager.getConnection(url, dbuser, dbpw);
 		System.out.println("DB접속 성공");	//DB접속 확인 디버깅
@@ -79,12 +77,10 @@ public class ReviewDao {
 	public ArrayList<HashMap<String, Object>> selectReviewGoodsTitle(int customerNo) throws Exception{
 		
 		// db핸들링(model)
-		Class.forName("org.mariadb.jdbc.Driver");	// DB Driver클래스 코드
-		System.out.println("드라이브 로딩 성공");		// DB 드라이브 로딩 확인 디버깅
-		// DB연결에 필요한 정보를 변수에 담아줌 (가독성)
-		String url = "jdbc:mariadb://localhost:3306/mall";		
+		Class.forName("org.mariadb.jdbc.Driver");
+		String url = "jdbc:mariadb://52.79.156.218:3306/mall";
 		String dbuser = "root";
-		String dbpw = "java1234";
+		String dbpw = "java12345";
 		//DB연결을 위한 Connection객체 생성, 연결
 		Connection conn = DriverManager.getConnection(url, dbuser, dbpw);
 		System.out.println("DB접속 성공");	//DB접속 확인 디버깅
@@ -130,12 +126,10 @@ public class ReviewDao {
 	public int insertReview(Review review) throws Exception{
 			
 		// db핸들링(model)
-		Class.forName("org.mariadb.jdbc.Driver");	// DB Driver클래스 코드
-		System.out.println("드라이브 로딩 성공");		// DB 드라이브 로딩 확인 디버깅
-		// DB연결에 필요한 정보를 변수에 담아줌 (가독성)
-		String url = "jdbc:mariadb://localhost:3306/mall";		
+		Class.forName("org.mariadb.jdbc.Driver");
+		String url = "jdbc:mariadb://52.79.156.218:3306/mall";
 		String dbuser = "root";
-		String dbpw = "java1234";
+		String dbpw = "java12345";
 		//DB연결을 위한 Connection객체 생성, 연결
 		Connection conn = DriverManager.getConnection(url, dbuser, dbpw);
 		System.out.println("DB접속 성공");	//DB접속 확인 디버깅
@@ -176,12 +170,10 @@ public class ReviewDao {
 		System.out.println(customerNo + "<-- ordersNo 값 구할 customerNo");
 		
 		// db핸들링(model)
-		Class.forName("org.mariadb.jdbc.Driver");		// DB Driver클래스 코드
-		System.out.println("드라이브 로딩 성공");	// DB 드라이브 로딩 확인 디버깅
-		// DB연결에 필요한 정보를 변수에 담아줌 (가독성)
-		String url = "jdbc:mariadb://localhost:3306/mall";		
+		Class.forName("org.mariadb.jdbc.Driver");
+		String url = "jdbc:mariadb://52.79.156.218:3306/mall";
 		String dbuser = "root";
-		String dbpw = "java1234";
+		String dbpw = "java12345";
 		//DB연결을 위한 Connection객체 생성, 연결
 		Connection conn = DriverManager.getConnection(url, dbuser, dbpw);
 		System.out.println("DB접속 성공");	//DB접속 확인 디버깅
@@ -226,12 +218,10 @@ public class ReviewDao {
 		System.out.println(reviewNo + "<-- 삭제할 reviewNo");
 		
 		// db핸들링(model)
-		Class.forName("org.mariadb.jdbc.Driver");	// DB Driver클래스 코드
-		System.out.println("드라이브 로딩 성공");		// DB 드라이브 로딩 확인 디버깅
-		// DB연결에 필요한 정보를 변수에 담아줌 (가독성)
-		String url = "jdbc:mariadb://localhost:3306/mall";		
+		Class.forName("org.mariadb.jdbc.Driver");
+		String url = "jdbc:mariadb://52.79.156.218:3306/mall";
 		String dbuser = "root";
-		String dbpw = "java1234";
+		String dbpw = "java12345";
 		//DB연결을 위한 Connection객체 생성, 연결
 		Connection conn = DriverManager.getConnection(url, dbuser, dbpw);
 		System.out.println("DB접속 성공");	//DB접속 확인 디버깅
@@ -266,12 +256,10 @@ public class ReviewDao {
 		System.out.println(customerId + "<-- customerNo 값 구할  customerId");
 		
 		// db핸들링(model)
-		Class.forName("org.mariadb.jdbc.Driver");	// DB Driver클래스 코드
-		System.out.println("드라이브 로딩 성공");		// DB 드라이브 로딩 확인 디버깅
-		// DB연결에 필요한 정보를 변수에 담아줌 (가독성)
-		String url = "jdbc:mariadb://localhost:3306/mall";		
+		Class.forName("org.mariadb.jdbc.Driver");
+		String url = "jdbc:mariadb://52.79.156.218:3306/mall";
 		String dbuser = "root";
-		String dbpw = "java1234";
+		String dbpw = "java12345";
 		//DB연결을 위한 Connection객체 생성, 연결
 		Connection conn = DriverManager.getConnection(url, dbuser, dbpw);
 		System.out.println("DB접속 성공");	//DB접속 확인 디버깅
@@ -313,12 +301,10 @@ public class ReviewDao {
 	public void updatereview(int reviewNo, String reviewContent) throws Exception{
 		
 		// db핸들링(model)
-		Class.forName("org.mariadb.jdbc.Driver");	// DB Driver클래스 코드
-		System.out.println("드라이브 로딩 성공");		// DB 드라이브 로딩 확인 디버깅
-		// DB연결에 필요한 정보를 변수에 담아줌 (가독성)
-		String url = "jdbc:mariadb://localhost:3306/mall";		
+		Class.forName("org.mariadb.jdbc.Driver");
+		String url = "jdbc:mariadb://52.79.156.218:3306/mall";
 		String dbuser = "root";
-		String dbpw = "java1234";
+		String dbpw = "java12345";
 		//DB연결을 위한 Connection객체 생성, 연결
 		Connection conn = DriverManager.getConnection(url, dbuser, dbpw);
 		System.out.println("DB접속 성공");	//DB접속 확인 디버깅
@@ -354,12 +340,10 @@ public class ReviewDao {
 	public ArrayList<HashMap<String, Object>> selectReviewOne(int reviewNo) throws Exception{
 		
 		// db핸들링(model)
-		Class.forName("org.mariadb.jdbc.Driver");	// DB Driver클래스 코드
-		System.out.println("드라이브 로딩 성공");		// DB 드라이브 로딩 확인 디버깅
-		// DB연결에 필요한 정보를 변수에 담아줌 (가독성)
-		String url = "jdbc:mariadb://localhost:3306/mall";		
+		Class.forName("org.mariadb.jdbc.Driver");
+		String url = "jdbc:mariadb://52.79.156.218:3306/mall";
 		String dbuser = "root";
-		String dbpw = "java1234";
+		String dbpw = "java12345";
 		//DB연결을 위한 Connection객체 생성, 연결
 		Connection conn = DriverManager.getConnection(url, dbuser, dbpw);
 		System.out.println("DB접속 성공");	//DB접속 확인 디버깅
@@ -412,12 +396,10 @@ public class ReviewDao {
 	public int selectReviewLastPage(int rowPerPage) throws Exception{
 		
 		// db핸들링(model)
-		Class.forName("org.mariadb.jdbc.Driver");	// DB Driver클래스 코드
-		System.out.println("드라이브 로딩 성공");		// DB 드라이브 로딩 확인 디버깅
-		// DB연결에 필요한 정보를 변수에 담아줌 (가독성)
-		String url = "jdbc:mariadb://localhost:3306/mall";		
+		Class.forName("org.mariadb.jdbc.Driver");
+		String url = "jdbc:mariadb://52.79.156.218:3306/mall";
 		String dbuser = "root";
-		String dbpw = "java1234";
+		String dbpw = "java12345";
 		//DB연결을 위한 Connection객체 생성, 연결
 		Connection conn = DriverManager.getConnection(url, dbuser, dbpw);
 		System.out.println("DB접속 성공");	//DB접속 확인 디버깅
